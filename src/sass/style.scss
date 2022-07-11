@@ -1,7 +1,10 @@
-
+* {
+	font-family: 'Museo Sans Cyrl', sans-serif;
+	font-weight: 900;
+}
 
 @import '_null';
-@import '_variables';
-@import '_mixins';
+@import 'base/variables';
+@import 'base/mixins';
 @import '_general';
-@import '_media';
+// @import '_media';
