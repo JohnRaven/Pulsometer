@@ -1,7 +1,10 @@
 .header{
+	padding-top: 33px;	
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	height: 60px;	
 	&__logo{
 		width: 250px;
 		img{
@@ -9,6 +12,8 @@
 		}
 	}
 	&__official{
+		transform: translate(-45px,-2px);
+		line-height: 25px;				
 		font-size: 12px;
 		font-weight: 500;
 		color: #ffffff;
@@ -19,6 +24,11 @@
 			font-weight: 700;
 		}
 	}
+	&__contacts{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
 	&__phone{
 		display: block;
 		font-size: 18px;
@@ -28,10 +38,5 @@
 			color: #ffffff;
 			text-decoration: none;
 		}
-	}
-	&__contacts{
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
 	}
 }

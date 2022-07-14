@@ -1,12 +1,12 @@
 .promo{
 	min-height: 650px;
-	padding: 21px 0 93px 0;
-	background: url(../img/bg_header.png) center center/cover no-repeat;;
+	padding: 0 auto;
+	background: url(../img/bg_header.png) center (center/cover) no-repeat;
 	&__wrapper{
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
-		margin-top: 90px;
+		margin-top: 100px;
 	}
 	&__header{
 		font-size: 42px;
@@ -16,7 +16,7 @@
 		line-height: 42px;
 	}
 	&__subheader{
-		margin-top: 17px;
+		margin-top: 10px;
 		line-height: 24px;
 		font-size: 24px;
 		font-weight: 500;
@@ -24,13 +24,15 @@
 		color: #ffffff;
 	}
 	&__icons{
-		margin-top: 65px;
-		width: 425px;
+		margin-top: 58px;
+		width: 364px;
+		height: 96px;
 		display: flex;
 		justify-content: space-between;
+		margin-right: 48px;
 	}
 	&__icon{
-		width: 106px;
+		width: 45px;
 		text-align: center;
 		font-size: 14px;
 		font-weight: 500;
@@ -38,7 +40,16 @@
 		img{
 			display: block;
 			margin: 0 auto;
-			margin-bottom: 20px;
+			margin-bottom: 16px;
+		}
+		span{
+			display: block;
+			transform: translateX(-30%);
+			line-height: 17px;
+			width: 110px;
+		}
+		&:last-child{
+			margin-top: 4px;
 		}
 	}
 	&__link{

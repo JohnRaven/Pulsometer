@@ -1,5 +1,6 @@
 
-@import '_null';
+
+@import 'base/null';
 @import 'base/variables';
 @import 'base/mixins';
 
@@ -9,7 +10,9 @@
 .container{
 	max-width: 950px;
 	margin: 0 auto;
+	padding: 0 5px;
 }
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
+@import 'blocks/advantages';
