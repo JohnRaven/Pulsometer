@@ -1,6 +1,6 @@
 
 .carousel{
-	padding: 81px 0;
+	padding: 110px 0 52px 0;
 	&__inner{
 		position: relative;
 		width: 750px;
@@ -10,9 +10,9 @@
 	//----------Стили для slick-слайдера:
 	.slick-prev, .slick-next{
 		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		left: -66px;
+		top: 44%;
+		transform: translateY(-55%);
+		left: -99px;
 		border: none;
 		background-color: #fff;
 		img{
@@ -22,6 +22,6 @@
 	}
 	.slick-next{
 		left: auto;
-		right: -66px;
+		right: -99px;
 	}
 }
