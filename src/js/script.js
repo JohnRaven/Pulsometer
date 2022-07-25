@@ -66,6 +66,12 @@ $(document).ready(function(){
 		});
 	});
 // 
+//VAlidation
+	$('#consultations-form').validate();
+	$('#consultation form').validate({
+		
+	});
+	$('#order form').validate();
 
 });
 //----------------------------
