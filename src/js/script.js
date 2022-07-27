@@ -112,5 +112,36 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+
+//Smooth scroll and page up
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
+	// $(document).ready(function(){
+	// 	$("a").on('click', function(event) {
+	// 	  if (this.hash !== "") {
+	// 		 event.preventDefault();
+	// 		 var hash = this.hash;
+	// 		 $('html, body').animate({
+	// 			scrollTop: $(hash).offset().top
+	// 		 }, 800, function(){
+	// 			window.location.hash = hash;
+	// 		 });
+	// 	  } 
+	// 	});
+	//  });
+
+	$("a[href^='#']").click(function() {	//плавный скролл по всем ссылкам на странице
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		return false;
+	});
+
+
 });
 //----------------------------
