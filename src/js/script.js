@@ -136,12 +136,14 @@ $(document).ready(function(){
 	// 	});
 	//  });
 
-	$("a[href^='#']").click(function() {	//плавный скролл по всем ссылкам на странице
+	$("a[href^='#up']").click(function() {	//плавный скролл по всем ссылкам на странице
 		const _href = $(this).attr("href");
 		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
 		return false;
 	});
 
+//Подключение библиотек с анимациями
+	new WOW().init();
 
 });
 //----------------------------
