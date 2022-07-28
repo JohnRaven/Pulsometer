@@ -9,7 +9,8 @@ $(document).ready(function(){
 				breakpoint: 992,		//от 0px до 992px
 				settings: {
 					dots: true,
-					arrows: false
+					arrows: false,
+					dotsClass: 'slick-dots'
 				}
 			}
 		]
