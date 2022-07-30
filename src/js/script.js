@@ -10,8 +10,7 @@ $(document).ready(function(){
 				settings: {
 					dots: true,
 					arrows: false,
-					dotsClass: 'slick-dots',
-					focusOnSelect: true
+					dotsClass: 'slick-dots'
 				}
 			}
 		]

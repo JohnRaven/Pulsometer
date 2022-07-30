@@ -1,6 +1,14 @@
 @media (max-width: 991px) {
 	.promo{
 		padding: 0 5px;
+		.header{
+			&__official{
+				transform: translate(0,-2px);
+				span{
+					font-size: 14px;
+				}
+			}
+		}
 	}
 
 	.advantages{
@@ -21,7 +29,6 @@
 	.carousel{
 		padding: 110px 0 52px 0;
 		&__inner{
-			// padding: 0 5px 0 0;
 			width: 100vmin;
 			text-align: center;
 			.slick-dots {
@@ -31,23 +38,26 @@
 				align-items: center;
 				width: 150px;
 				height: 20px;
-			
 				li {
-					content: ' ';
 					width: 20px;
 					height: 20px;
 					color: #dadadac0;
+					background-color: #fff;
 					border-radius: 100%;
 					border: solid 2px;
-
+					font-size: 0;
+					&:hover{
+						color: $main-color;
+					}
 				}
 			}
 			img{
 				width: 100vmin;
 			}
 		}
-		.slick-active{
+		li.slick-active{
 			color: black;
+			border: solid 4px;
 		}
 	}
 
