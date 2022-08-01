@@ -117,24 +117,27 @@
 		padding: 0 5px;
 		.header{
 			padding-top: 10px;
-			&__official{
-				position: absolute;
-				top: 80px;
-				line-height: 15px;				
-				font-size: 12px;
-				text-align: start;
-				span{
-					display: block;
-					font-size: 16px;
-					font-weight: 700;
+			&__logo{
+				width: 160px;
+				img{
+					margin-top: -15px;
 				}
 			}
-			&__logo{
+			&__official{
 				position: absolute;
-				// width: 150px;
-				img{
-					width: 100%;
+				top: 60px;
+				line-height: 15px;				
+				font-size: 11px;
+				text-align: start;
+				span{
+					font-size: 14px;
 				}
+			}
+			&__phone{
+				font-size: 14px;
+			}
+			.button{
+				width: 130px;
 			}
 		}
 		&__wrapper{
@@ -144,21 +147,13 @@
 			margin: 0 auto;
 			margin-top: 58px;
 			width: 250px;
-			height: 96px;
-			display: flex;
-			justify-content: space-between;
 		}
 		&__icon{
-			width: 45px;
-			text-align: center;
 			font-size: 12px;
-			font-weight: 500;
-			color: #ffffff;
 			img{
 				width: 80%;
 			}
 			span{
-				// transform: translateX(-30%);
 				line-height: 14px;
 				width: 90px;
 				&:last-child{
@@ -219,12 +214,9 @@
 	}
 
 	.carousel{
-		// display: none;
-
-		padding: 110px 0 52px 0;
+		padding: 60px 0 52px 0;
 		&__inner{
-			// width: 100vmin;
-			width: 320px;
+			width: calc(100vw - 20px);
 			.slick-dots {
 				li {
 					&:hover{
@@ -233,7 +225,7 @@
 				}
 			}
 			img{
-				width: 320px;
+				width: calc(100vw - 20px);
 			}
 		}
 		li.slick-active{
@@ -315,6 +307,10 @@
 				top: 20px;
 				right: 15px;
 				font-size: 35px;
+			}
+			&__subtitle{
+				padding-left: 10px;
+				padding-right: 10px;
 			}
 		}
 	}
