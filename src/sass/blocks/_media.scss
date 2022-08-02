@@ -105,9 +105,50 @@
 
 @media (max-width: 667px) {
 	.promo{
-		padding: 0 10px;
-		&__header{
-			font-size: 36px;
+		padding: 0 5px;
+		.header{
+			&__logo{
+				width: 190px;
+			}
+		}
+	}
+
+	.advantages{
+		&__text{
+			font-size: 13px;
+		}
+	}
+
+	.carousel{
+		&__inner{
+			.slick-dots {
+				li {
+					&:hover{
+						color: #dadadac0;
+					}
+				}
+			}
+		}
+		li.slick-active{
+			color: black;
+			border: solid 4px;
+		}
+	}
+
+	.catalog{
+		&__tab{
+			width: 30%;
+			max-width: 200px;
+			&:hover{
+				box-shadow: none;
+				border: 2px solid #d0d0d0;
+			}
+			&_active{
+				border: none;
+			}
+		}
+		&__content{
+			margin-top: 40px;
 		}
 	}
 }
@@ -207,6 +248,7 @@
 		.feed-form{
 			margin-top: 30px;
 			width: 100%;
+			max-width: 300px;
 			input{
 				width: 100%;
 			}
@@ -243,6 +285,7 @@
 			margin-top: 30px;
 		}
 		&__tab{
+			width: 200px;
 			border: 2px solid #d0d0d0;
 			margin: 5px 0;
 			&:hover{
@@ -301,7 +344,8 @@
 	.overlay{
 		.modal{
 			width: 100%;
-			min-height: 100%;
+			max-width: 380px;
+			min-height: 400px;
 			padding: 25px 15px 15px 15px;
 			&__close{
 				top: 20px;
@@ -310,7 +354,7 @@
 			}
 			&__subtitle{
 				padding-left: 10px;
-				padding-right: 10px;
+				padding-right: 30px;
 			}
 		}
 	}
@@ -318,8 +362,10 @@
 	.feed-form{
 		margin-top: 25px;
 		width: 100%;
+		max-width: 380px;
 		input{
 			width: 100%;
+			max-width: 380px;
 			margin-bottom: 10px;
 		}
 	}
