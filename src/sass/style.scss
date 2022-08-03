@@ -1,6 +1,12 @@
 *{
 	font-family: 'Museo Sans Cyrl', sans-serif;
 }
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/slick';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css');
+@import 'libs/animate';
+
 
 @import 'base/null';
 @import 'base/variables';
